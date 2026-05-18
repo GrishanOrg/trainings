@@ -1,47 +1,44 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="banner-one banner-one--static" id="home">
-      <div
-        className="banner-one__pattern"
-        style={{ backgroundImage: "url('/landing/pattern-grid.png')" }}
-      />
-      <div className="banner-one__pattern2">
-        <img src="/landing/banner-v1-pattern2.png" alt="" />
-      </div>
-      <div className="shape1 rotate-me">
-        <img src="/landing/banner-v1-shape1.png" alt="" />
-      </div>
-
       <div className="container">
         <div className="banner-one__content">
-          <div className="banner-one__content-left">
-            <h2>
-              Turn Existing Training <br />
-              Into <span>Interactive Modules</span>
-            </h2>
-            <p>
-              Safety and compliance training <br /> for multilingual frontline teams
-            </p>
+          <h1 className="banner-one__title">
+            Turn Existing Training Into Interactive Modules
+          </h1>
+
+          <p className="banner-one__text">
+            We turn SOPs, PDFs, slide decks and videos into short SCORM-ready
+            modules that fit your existing LMS.
+          </p>
+
+          <div className="banner-one__actions">
+            <a className="thm-btn banner-one__cta" href="#result">
+              Get started
+            </a>
           </div>
 
-          <div className="banner-one__content-right">
-            <div className="banner-one__content-right-text">
-              <p>
-                We turn SOPs, PDFs, slide decks and videos <br />
-                into short SCORM-ready modules that fit your existing LMS.
-              </p>
+          <div className="banner-one__visuals" aria-hidden="true">
+            <div className="banner-one__visual banner-one__visual--web">
+              <Image
+                src="/img/top_banner_example_web.png"
+                alt=""
+                width={1016}
+                height={564}
+                priority
+              />
             </div>
 
-            <div className="banner-one__content-right-btn">
-              <a className="thm-btn" href="#result">
-                Start With A Pilot
-                <span className="hover-btn hover-bx" />
-                <span className="hover-btn hover-bx2" />
-                <span className="hover-btn hover-bx3" />
-                <span className="hover-btn hover-bx4" />
-              </a>
+            <div className="banner-one__visual banner-one__visual--mob">
+              <Image
+                src="/img/top_banner_example_mob.png"
+                alt=""
+                width={644}
+                height={868}
+                priority
+              />
             </div>
           </div>
         </div>

@@ -7,13 +7,35 @@ Brand One
     position: relative;
     display: block;
     background: var(--logistiq-gray-bg);
-    padding: 60px 0px 60px;
+    padding: 60px 0;
     z-index: 2;
+}
+
+.brand-one__heading {
+    margin-bottom: 35px;
+}
+
+.brand-one__heading .sec-title {
+    max-width: 760px;
+    margin: -8px auto 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.brand-one__heading-text {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: #000000;
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
 }
 
 .brand-one__single {
     position: relative;
     display: block;
+    height: 100%;
 }
 
 .brand-one__single-inner {
@@ -21,42 +43,57 @@ Brand One
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 0px 24px;
+    height: 100%;
+    min-height: 150px;
+    padding: 22px 20px;
+    border-radius: 8px;
+    overflow: hidden;
     z-index: 1;
 }
 
 .brand-one__single-inner::before {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
     background: var(--logistiq-white);
-    transform: scaleX(0.9);
-    transition: all 600ms ease 100ms;
+    border-radius: 8px;
     content: "";
     z-index: -1;
 }
 
-.brand-one__single:hover .brand-one__single-inner::before {
-    transform: scaleY(1);
-}
-
-.brand-one__single-inner a {
-    position: relative;
-    display: block;
+.brand-one__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 104px;
+    overflow: hidden;
 }
 
 .brand-one__single-inner img {
+    display: block;
     width: auto;
-    transition: .7s ease;
-    transform: scale(1.05);
-}
-
-.brand-one__single:hover .brand-one__single-inner img {
-    transform: scale(1);
+    max-width: 100%;
+    height: auto;
+    max-height: 104px;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .brand-one__carousel.owl-carousel .owl-item img {
     width: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .brand-one__single-inner {
+        min-height: 124px;
+        padding: 18px 14px;
+    }
+
+    .brand-one__logo {
+        min-height: 88px;
+    }
+
+    .brand-one__single-inner img {
+        max-height: 88px;
+    }
 }

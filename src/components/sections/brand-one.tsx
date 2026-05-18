@@ -7,6 +7,8 @@ const brands = [
   { id: 4, src: "/img/lms/docebo.jpeg", alt: "Docebo" },
   { id: 5, src: "/img/lms/moodle.png", alt: "Moodle" },
   { id: 6, src: "/img/lms/sap_success_factor.png", alt: "SAP SuccessFactors" },
+  { id: 7, src: "/img/lms/litmos.avif", alt: "Litmos" },
+  { id: 8, src: "/img/lms/talent.png", alt: "TalentLMS" },
 ];
 
 export function BrandOne() {

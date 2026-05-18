@@ -2,14 +2,14 @@ const counters = [
   {
     id: 1,
     iconClass: "icon-box",
-    value: "2800",
+    value: "3400",
     label: "Courses Delivered",
     animationClass: "fadeInLeft",
   },
   {
     id: 2,
     iconClass: "icon-location",
-    value: "200",
+    value: "500",
     label: "Clients",
     animationClass: "fadeInRight",
   },
@@ -49,7 +49,6 @@ export function CounterOne() {
                     </div>
                   </div>
                 </div>
-                <div className="shape1" />
               </div>
             </div>
           ))}

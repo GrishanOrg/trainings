@@ -1,71 +1,3 @@
-@keyframes rotateme {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotateme {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes rotateme {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes rotateme {
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  to {
-    -o-transform: rotate(360deg);
-  }
-}
-
-
-.rotate-me {
-  animation-name: rotateme;
-  animation-duration: 24s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-
-  -webkit-animation-name: rotateme;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-
-  -moz-animation-name: rotateme;
-  -moz-animation-duration: 24s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-
-  -ms-animation-name: rotateme;
-  -ms-animation-duration: 24s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-
-  -o-animation-name: rotateme;
-  -o-animation-duration: 24s;
-  -o-animation-iteration-count: infinite;
-  -o-animation-timing-function: linear;
-}
-
 /* circle text animation */
 @keyframes svganim {
   100% {
@@ -804,52 +736,6 @@
 
 
 
-/*** 
-=============================================
-    Float Bob Y Animation Css
-=============================================
-***/
-@-webkit-keyframes float-bob-y {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes float-bob-y {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
-.float-bob-y {
-  -webkit-animation-name: float-bob-y;
-  animation-name: float-bob-y;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-
-
 @-webkit-keyframes footerTree {
 
   0%,
@@ -1556,53 +1442,6 @@
   }
 }
 
-
-
-
-
-/***
-=============================================
-    Float Bob X Animation Css
-=============================================
-***/
-@-webkit-keyframes float-bob-x {
-  0% {
-    transform: translateX(-30px);
-  }
-
-  50% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(-30px);
-  }
-}
-
-@keyframes float-bob-x {
-  0% {
-    transform: translateX(-30px);
-  }
-
-  50% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(-30px);
-  }
-}
-
-.float-bob-x {
-  -webkit-animation-name: float-bob-x;
-  animation-name: float-bob-x;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
 
 
 

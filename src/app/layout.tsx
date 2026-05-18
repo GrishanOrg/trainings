@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DM_Sans, Montserrat } from "next/font/google";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -15,6 +16,18 @@ import "../styles/sections/12-footer.css";
 import "../styles/sections/banner.css";
 import "../styles/sections/skill.css";
 
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-dm-sans",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["900"],
+  variable: "--font-montserrat",
+});
+
 export const metadata: Metadata = {
   title: "Interactive Trainings",
   description: "Interactive Trainings landing page.",
@@ -26,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dmSans.variable} ${montserrat.variable}`}>
       <body>{children}</body>
     </html>
   );

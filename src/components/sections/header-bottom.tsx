@@ -1,4 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 
 const navItems = [
   { id: 1, label: "Home", href: "#home" },
@@ -8,6 +11,16 @@ const navItems = [
 ];
 
 export function HeaderBottom() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((current) => !current);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="main-header main-header-one">
       <nav className="main-menu">
@@ -19,23 +32,38 @@ export function HeaderBottom() {
                   <div className="main-header-one__bottom-inner">
                     <div className="main-header-one__bottom-left">
                       <div className="logo-box">
-                        <a href="#home">
-                          <img src="/img/logo_256.png" alt="Interactive Trainings logo" />
+                        <a href="#home" onClick={closeMenu}>
+                          <Image
+                            src="/img/logo_draft.png"
+                            alt="Interactive Trainings logo"
+                            width={446}
+                            height={98}
+                            priority
+                          />
                         </a>
                       </div>
                       <div className="main-header-one__bottom-menu">
-                        <div className="main-menu__main-menu-box">
+                        <div
+                          className={`main-menu__main-menu-box${
+                            isMenuOpen ? " main-menu__main-menu-box--open" : ""
+                          }`}
+                        >
                           <button
                             className="mobile-nav__toggler"
                             type="button"
-                            aria-label="Open navigation"
+                            aria-controls="main-navigation"
+                            aria-expanded={isMenuOpen}
+                            aria-label={isMenuOpen ? "Close navigation" : "Open navigation"}
+                            onClick={toggleMenu}
                           >
                             Menu
                           </button>
-                          <ul className="main-menu__list">
+                          <ul className="main-menu__list" id="main-navigation">
                             {navItems.map((item) => (
                               <li key={item.id}>
-                                <a href={item.href}>{item.label}</a>
+                                <a href={item.href} onClick={closeMenu}>
+                                  {item.label}
+                                </a>
                               </li>
                             ))}
                           </ul>

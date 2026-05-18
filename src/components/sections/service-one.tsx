@@ -47,15 +47,12 @@ const services = [
 export function ServiceOne() {
   return (
     <section className="service-one" id="examples">
-      <div
-        className="service-one__pattern"
-        style={{ backgroundImage: "url(/landing/service-v1-pattern.jpg)" }}
-      />
+      <div className="service-one__pattern" />
       <div className="container">
         <div className="sec-title center text-center tg-heading-subheading animation-style2">
           <h2 className="sec-title__title tg-element-title">
             What We Turn Into
-            <br /> Interactive <span>Training</span>
+            <br /> <span>Interactive Training</span>
           </h2>
         </div>
 
@@ -103,14 +100,13 @@ export function ServiceOne() {
                       </div>
 
                       <div className="service-one__single-content">
-                        <h2>
+                        <h3>
                           <a href={service.href}>{service.title}</a>
-                        </h2>
+                        </h3>
                         <p>{service.description}</p>
                         <div className="btn-box">
                           <a href={service.href}>
-                            {service.cta}{" "}
-                            <span className="icon-right-arrow21"></span>
+                            {service.cta}
                           </a>
                         </div>
                       </div>

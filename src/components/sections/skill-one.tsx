@@ -1,29 +1,22 @@
+import Image from "next/image";
 import { FadeImageSlider } from "@/components/ui/fade-image-slider";
 
 const skills = [
   {
     id: 1,
     name: "Example module from your existing material",
-    width: "100%",
-    value: "Included",
   },
   {
     id: 2,
     name: "Pilot scope built around one real workflow",
-    width: "100%",
-    value: "Pilot",
   },
   {
     id: 3,
     name: "SCORM-ready, mobile-ready, LMS-compatible delivery",
-    width: "100%",
-    value: "Ready",
   },
   {
     id: 4,
     name: "Multilingual adaptation for frontline teams",
-    width: "100%",
-    value: "EU",
   },
 ];
 
@@ -43,7 +36,7 @@ export function SkillOne() {
     <section className="skill-one" id="result">
       <div className="container">
         <div className="row">
-          <div className="col-xl-5">
+          <div className="col-xl-5 order-2 order-xl-1">
             <div className="skill-one__img">
               <div className="skill-one__img1">
                 <FadeImageSlider slides={slides} />
@@ -51,11 +44,11 @@ export function SkillOne() {
             </div>
           </div>
 
-          <div className="col-xl-7">
+          <div className="col-xl-7 order-1 order-xl-2">
             <div className="skill-one__content">
               <div className="sec-title tg-heading-subheading animation-style2">
                 <h2 className="sec-title__title tg-element-title">
-                  What The Result <br /> Looks <span>Like</span>
+                  What The Result <br /> <span>Looks Like</span>
                 </h2>
               </div>
 
@@ -72,33 +65,22 @@ export function SkillOne() {
               <ul className="skill-one__progress">
                 {skills.map((skill) => (
                   <li key={skill.id}>
-                    <div className="skill-one__progress-single">
-                      <div className="title-box">
-                        <p>{skill.name}</p>
-                      </div>
-                      <div className="bar">
-                        <div
-                          className="bar-inner count-bar"
-                          data-percent={skill.value}
-                          style={{ width: skill.width }}
-                        >
-                          <div className="count-text">{skill.value}</div>
-                        </div>
-                      </div>
-                    </div>
+                    <p className="skill-one__progress-item">
+                      <Image
+                        className="skill-one__progress-icon"
+                        src="/icon/checkmark.png"
+                        alt=""
+                        width={16}
+                        height={16}
+                      />
+                      <span>{skill.name}</span>
+                    </p>
                   </li>
                 ))}
               </ul>
 
               <div className="skill-one__content-btn">
-                <a className="thm-btn" href="#home">
-                  Start With A Pilot
-                  <i className="icon-right-arrow21" />
-                  <span className="hover-btn hover-bx" />
-                  <span className="hover-btn hover-bx2" />
-                  <span className="hover-btn hover-bx3" />
-                  <span className="hover-btn hover-bx4" />
-                </a>
+                <a className="thm-btn" href="#home">Start With A Pilot</a>
               </div>
             </div>
           </div>
