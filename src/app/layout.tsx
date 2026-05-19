@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Montserrat } from "next/font/google";
+import Script from "next/script";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -40,7 +41,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} ${montserrat.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6RYN5ZBZGM"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6RYN5ZBZGM');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
