@@ -11,34 +11,38 @@ const services = [
     description:
       "Interactive training for store teams: POS controls, product handling, and confident decisions at the checkout.",
     image: "/img/retail.png",
-    icon: "icon-delivery-man",
+    iconSrc: "/icon/icon_0007_checkout-icon.png",
+    iconAlt: "Checkout training icon",
     cta: "See How It Works",
     href: "#problem",
-  },
-  {
-    title: "Commercial Kitchen Training",
-    description:
-      "Practical modules for kitchen staff: food safety, allergen handling, hygiene rules, and equipment procedures.",
-    image: "/img/kitchen.png",
-    icon: "icon-shipment",
-    cta: "See LMS Fit",
-    href: "#lms",
   },
   {
     title: "Field Service Training",
     description:
       "Scenario-based training for technicians: PPE, service procedures, equipment checks, and safe actions on site.",
     image: "/img/fieldservice.png",
-    icon: "icon-international-shipping",
+    iconSrc: "/icon/icon_0000_shield-checkmark-black-icon.png",
+    iconAlt: "Field service safety training icon",
     cta: "Book Demo",
     href: "#multilingual",
+  },
+  {
+    title: "Commercial Kitchen Training",
+    description:
+      "Practical modules for kitchen staff: food safety, allergen handling, hygiene rules, and equipment procedures.",
+    image: "/img/kitchen.png",
+    iconSrc: "/icon/icon_0001_food-restaurant-icon.png",
+    iconAlt: "Commercial kitchen training icon",
+    cta: "See LMS Fit",
+    href: "#lms",
   },
   {
     title: "Production Line Training",
     description:
       "Operational training for manufacturing teams: machine restart checks, line procedures, guard verification, and escalation.",
     image: "/img/industrial.png",
-    icon: "icon-delivery-man",
+    iconSrc: "/icon/icon_0003_maintenance-icon.png",
+    iconAlt: "Production line training icon",
     cta: "Start With A Pilot",
     href: "#result",
   },
@@ -113,7 +117,7 @@ export function ServiceOne() {
                     </div>
 
                     <div className="icon">
-                      <span className={service.icon}></span>
+                      <img src={service.iconSrc} alt={service.iconAlt} />
                     </div>
                   </div>
                 </SwiperSlide>

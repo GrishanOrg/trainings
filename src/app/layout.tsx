@@ -33,6 +33,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Interactive Trainings",
   description: "Interactive Trainings landing page.",
+  icons: {
+    icon: "/favicon1.png",
+  },
 };
 
 export default function RootLayout({

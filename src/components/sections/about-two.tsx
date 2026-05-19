@@ -6,18 +6,6 @@ export function AboutTwo() {
       <div className="container">
         <div className="row">
           <div className="col-xl-6">
-            <div className="about-two__img">
-              <Image
-                className="about-two__img-image"
-                src="/img/multilang.png"
-                alt="Training module localized for a frontline team"
-                width={1800}
-                height={1128}
-              />
-            </div>
-          </div>
-
-          <div className="col-xl-6">
             <div className="about-two__content">
               <div className="sec-title tg-heading-subheading animation-style2">
                 <h2 className="sec-title__title tg-element-title">
@@ -97,9 +85,21 @@ export function AboutTwo() {
 
               <div className="about-two__content-bottom">
                 <div className="btn-box">
-                  <a className="thm-btn" href="#result">GetStarted</a>
+                  <a className="thm-btn" href="#result">Get Started</a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="col-xl-6">
+            <div className="about-two__img">
+              <Image
+                className="about-two__img-image"
+                src="/img/multilang-current.png"
+                alt="Training module localized for a frontline team"
+                width={1800}
+                height={1128}
+              />
             </div>
           </div>
         </div>

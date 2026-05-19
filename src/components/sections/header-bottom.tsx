@@ -34,10 +34,10 @@ export function HeaderBottom() {
                       <div className="logo-box">
                         <a href="#home" onClick={closeMenu}>
                           <Image
-                            src="/img/logo_draft.png"
+                            src="/img/logo_700.png"
                             alt="Interactive Trainings logo"
-                            width={446}
-                            height={98}
+                            width={700}
+                            height={144}
                             priority
                           />
                         </a>

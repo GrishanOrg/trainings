@@ -29,6 +29,10 @@ const slides = [
     src: "/img/quiz2.png",
     alt: "Interactive training module screen",
   },
+  {
+    src: "/img/quiz3.png",
+    alt: "Interactive training module follow-up screen",
+  },
 ];
 
 export function SkillOne() {

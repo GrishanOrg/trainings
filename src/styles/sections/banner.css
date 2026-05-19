@@ -49,17 +49,10 @@ Banner One
     line-height: 0;
 }
 
-.banner-one__visuals {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 28px;
+.banner-one__visual {
     width: 100%;
     max-width: 1120px;
     margin-top: 56px;
-}
-
-.banner-one__visual {
     line-height: 0;
 }
 
@@ -67,16 +60,6 @@ Banner One
     display: block;
     width: 100%;
     height: auto;
-}
-
-.banner-one__visual--web {
-    flex: 1 1 820px;
-    max-width: 820px;
-}
-
-.banner-one__visual--mob {
-    flex: 0 1 210px;
-    max-width: 210px;
 }
 
 .banner-one__cta {
@@ -87,17 +70,8 @@ Banner One
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .banner-one__visuals {
-        gap: 18px;
+    .banner-one__visual {
         margin-top: 48px;
-    }
-
-    .banner-one__visual--web {
-        max-width: 620px;
-    }
-
-    .banner-one__visual--mob {
-        max-width: 160px;
     }
 }
 
@@ -111,16 +85,7 @@ Banner One
         line-height: 1.55;
     }
 
-    .banner-one__visuals {
-        gap: 12px;
+    .banner-one__visual {
         margin-top: 40px;
-    }
-
-    .banner-one__visual--web {
-        max-width: 280px;
-    }
-
-    .banner-one__visual--mob {
-        max-width: 92px;
     }
 }

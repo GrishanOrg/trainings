@@ -22,7 +22,6 @@ Skill One
 .skill-one__img1 {
     position: relative;
     display: block;
-    overflow: hidden;
     width: 100%;
     z-index: 1;
 }
@@ -48,12 +47,8 @@ Skill One
 
 .skill-one__img1 img {
     width: 100%;
+    height: auto;
     transition: .5s ease;
-    transform: scale(1.05);
-}
-
-.skill-one__img1:hover img {
-    transform: scale(1);
 }
 
 .skill-one__content {

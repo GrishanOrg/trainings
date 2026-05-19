@@ -1,16 +1,4 @@
 import Image from "next/image";
-import { FadeImageSlider } from "@/components/ui/fade-image-slider";
-
-const slides = [
-  {
-    src: "/img/uncertancy0.png",
-    alt: "Uncertainty training scenario screen",
-  },
-  {
-    src: "/img/uncertancy1.png",
-    alt: "Uncertainty training decision screen",
-  },
-];
 
 export function AboutOne() {
   return (
@@ -142,7 +130,13 @@ export function AboutOne() {
           <div className="col-xl-6">
             <div className="about-one__img">
               <div className="about-one__img1">
-                <FadeImageSlider slides={slides} />
+                <Image
+                  className="about-one__img-image"
+                  src="/img/uncertancy.png"
+                  alt="Static training example screen"
+                  width={1600}
+                  height={1200}
+                />
               </div>
             </div>
           </div>

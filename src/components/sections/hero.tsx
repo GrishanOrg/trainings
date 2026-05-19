@@ -20,26 +20,14 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="banner-one__visuals" aria-hidden="true">
-            <div className="banner-one__visual banner-one__visual--web">
-              <Image
-                src="/img/top_banner_example_web.png"
-                alt=""
-                width={1016}
-                height={564}
-                priority
-              />
-            </div>
-
-            <div className="banner-one__visual banner-one__visual--mob">
-              <Image
-                src="/img/top_banner_example_mob.png"
-                alt=""
-                width={644}
-                height={868}
-                priority
-              />
-            </div>
+          <div className="banner-one__visual" aria-hidden="true">
+            <Image
+              src="/img/header2.png"
+              alt=""
+              width={1600}
+              height={900}
+              priority
+            />
           </div>
         </div>
       </div>

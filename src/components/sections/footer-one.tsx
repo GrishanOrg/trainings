@@ -25,7 +25,7 @@ export function FooterOne() {
                 <div className="footer-widget__single footer-one__about">
                   <div className="footer-one__about-logo">
                     <a href="#home">
-                      <img src="/img/logo_draft.png" alt="Interactive Trainings logo" />
+                      <img src="/img/logo_700.png" alt="Interactive Trainings logo" />
                     </a>
                   </div>
                   <p className="footer-one__about-text">

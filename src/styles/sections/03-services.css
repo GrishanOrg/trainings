@@ -180,16 +180,15 @@ Service One
     border-bottom-color: #FBD72A;
 }
 
-.service-one__single .icon span::before {
-    position: relative;
-    display: inline-block;
-    color: var(--logistiq-white);
-    font-size: 45px;
-    line-height: 45px;
-    transition: all 500ms ease;
+.service-one__single .icon img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    transition: transform 500ms ease;
 }
 
-.service-one__single:hover .icon span::before {
+.service-one__single:hover .icon img {
     transform: rotateY(180deg);
 }
 
