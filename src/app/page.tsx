@@ -1,4 +1,5 @@
 import { AboutOne } from "@/components/sections/about-one";
+import { AboutTools } from "@/components/sections/about-tools";
 import { AboutTwo } from "@/components/sections/about-two";
 import { BrandOne } from "@/components/sections/brand-one";
 import { CounterOne } from "@/components/sections/counter-one";
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutOne />
         <BrandOne />
         <SkillOne />
+        <AboutTools />
         <CounterOne />
         <AboutTwo />
         <ServiceOne />
