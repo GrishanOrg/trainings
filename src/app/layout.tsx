@@ -14,6 +14,7 @@ import "../styles/sections/03-services.css";
 import "../styles/sections/09-counter.css";
 import "../styles/sections/07-brand.css";
 import "../styles/sections/12-footer.css";
+import "../styles/sections/13-lead-form.css";
 import "../styles/sections/banner.css";
 import "../styles/sections/skill.css";
 

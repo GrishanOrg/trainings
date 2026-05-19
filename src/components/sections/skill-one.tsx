@@ -33,7 +33,7 @@ const slides = [
 
 export function SkillOne() {
   return (
-    <section className="skill-one" id="result">
+    <section className="skill-one" id="example-module">
       <div className="container">
         <div className="row">
           <div className="col-xl-5 order-2 order-xl-1">

@@ -133,7 +133,7 @@ export function AboutOne() {
 
               <div className="about-one__content-bottom">
                 <div className="btn-box">
-                  <a className="thm-btn" href="#result">See Example Module</a>
+                  <a className="thm-btn" href="#example-module">See Example Module</a>
                 </div>
               </div>
             </div>

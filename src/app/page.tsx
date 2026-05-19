@@ -5,6 +5,7 @@ import { CounterOne } from "@/components/sections/counter-one";
 import { FooterOne } from "@/components/sections/footer-one";
 import { HeaderBottom } from "@/components/sections/header-bottom";
 import { Hero } from "@/components/sections/hero";
+import { LeadForm } from "@/components/sections/lead-form";
 import { ServiceOne } from "@/components/sections/service-one";
 import { SkillOne } from "@/components/sections/skill-one";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <CounterOne />
         <AboutTwo />
         <ServiceOne />
+        <LeadForm />
         <FooterOne />
       </main>
     </div>
