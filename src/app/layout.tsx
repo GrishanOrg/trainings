@@ -36,6 +36,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon1.png",
   },
+  openGraph: {
+    title: "Interactive Trainings",
+    description: "Interactive Trainings landing page.",
+    images: [
+      {
+        url: "/banner/og-image.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Interactive Trainings",
+    description: "Interactive Trainings landing page.",
+    images: ["/banner/og-image.png"],
+  },
 };
 
 export default function RootLayout({
